@@ -10,6 +10,6 @@ End_Time=$(date +%s)
 
 echo "Script stopped execution at:: $End_Time"
 
-Total_Time=$(($Start_Time-$End_Time))
+Total_Time=$(($End_Time-$Start_Time))
 
 echo "Total time taken:: $Total_Time seconds"
