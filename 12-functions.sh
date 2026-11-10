@@ -11,7 +11,7 @@ echo "proceeding"
 dnf install mysql -y 
 
 if [ $? -ne 0 ]; then
-echo " mysql installation failure"
+echo " mysqll installation failure"
 exit 1
 else
 echo " mysql installation success"
@@ -19,7 +19,7 @@ fi
 dnf install java -y
 
 if [ $? -ne 0 ]; then
-echo " java installation failure"
+echo " javaa installation failure"
 exit 1
 else
 echo " java installation success"
