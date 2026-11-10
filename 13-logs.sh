@@ -20,10 +20,11 @@ fi
 
 }
 mkdir -p $logs_dir
-echo "script started execution at $(date +"%m-%d-%Y")"
+echo "script started execution at $(date +"%m-%d-%Y_%H-%M-%S")"
 
 dnf install mysql -y &>> $log_file
 validate $? "mysql installation"
 
 dnf install java -y &>> $log_file
 validate $? "java installation"
+echo "script completed execution at $(date +"%m-%d-%Y_%H-%M-%S")"
