@@ -18,7 +18,7 @@ fi
 }
 echo "proceeding"
 
-dnf install mysql -y 
+dnf install mysqll -y 
 validate $? "mysql installation"
 
 dnf install java -y
