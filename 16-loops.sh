@@ -24,7 +24,7 @@ echo "script started execution at $(date +"%m-%d-%Y_%H-%M-%S")"
 
 for package in $@
 do
-dnf list installed $package
+dnf list installed $package  &>> $log_file
 if [ $? -ne 0 ]; then
 echo "installing package :$package" | tee -a $log_file
 dnf install $package -y &>> $log_file
