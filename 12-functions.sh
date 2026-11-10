@@ -8,18 +8,18 @@ exit 1
 fi
 echo "proceeding"
 
-dnf install mysql -y 
+dnf install mysqll -y 
 
 if [ $? -ne 0 ]; then
-echo " mysqll installation failure"
+echo " mysql installation failure"
 exit 1
 else
 echo " mysql installation success"
 fi
-dnf install java -y
+dnf install javaa -y
 
 if [ $? -ne 0 ]; then
-echo " javaa installation failure"
+echo " java installation failure"
 exit 1
 else
 echo " java installation success"
